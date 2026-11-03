@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-label="Asisten">
+  <!-- Ilustrasi bawaan ikon asisten (dipakai bila admin belum mengunggah foto asisten). -->
+  <path d="M12 120c2-25 21-36 48-36s46 11 48 36z" fill="#20242b"/>
+  <path d="M52 84l8 16 8-16-8-5z" fill="#2c313a"/>
+  <path d="M50 66h20v16c0 6-20 6-20 0z" fill="#c08355"/>
+  <ellipse cx="39" cy="54" rx="4.2" ry="6.4" fill="#d99f70"/>
+  <ellipse cx="81" cy="54" rx="4.2" ry="6.4" fill="#d99f70"/>
+  <path d="M60 22c13 0 21 10 21 25 0 16-9 27-21 27s-21-11-21-27c0-15 8-25 21-25z" fill="#e3ab7c"/>
+  <path d="M38 46c0-18 9-27 22-27s22 9 22 27c0-9-8-14-22-14s-22 5-22 14z" fill="#14161b"/>
+  <path d="M48 45c3-2 6-2 9 0M63 45c3-2 6-2 9 0" stroke="#241f1a" stroke-width="2.4" stroke-linecap="round" fill="none"/>
+  <circle cx="52" cy="51" r="2.7" fill="#231d18"/><circle cx="68" cy="51" r="2.7" fill="#231d18"/>
+  <circle cx="52.9" cy="50.1" r=".9" fill="#fff"/><circle cx="68.9" cy="50.1" r=".9" fill="#fff"/>
+  <path d="M60 54c0 3.4-1.4 4.6-2.6 5.6 1.4.9 3.8.9 5.2 0" stroke="#c18459" stroke-width="1.9" fill="none" stroke-linecap="round"/>
+  <path d="M53 64c2.6 3.6 11.4 3.6 14 0" stroke="#a4603f" stroke-width="2.4" fill="none" stroke-linecap="round"/>
+  <path d="M48 66c2 9 22 9 24 0 1 12-9 16-12 16s-13-4-12-16z" fill="#a97a55" opacity=".22"/>
+  <path d="M38 48c0-20 44-20 44 0" stroke="#23262c" stroke-width="6" fill="none" stroke-linecap="round"/>
+  <rect x="32" y="42" width="10" height="19" rx="5" fill="#23262c"/>
+  <rect x="78" y="42" width="10" height="19" rx="5" fill="#23262c"/>
+  <path d="M36 58c0 9 9 13 16 12" stroke="#23262c" stroke-width="3.4" fill="none" stroke-linecap="round"/>
+  <ellipse cx="54" cy="70" rx="5.4" ry="3.8" fill="#3b414a"/>
+</svg>

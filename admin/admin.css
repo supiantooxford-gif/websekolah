@@ -1,0 +1,99 @@
+/* Panel admin Website Sekolah — memakai variabel & komponen dari ../assets/style.css */
+
+body.admin{background:#f1f5f3;margin:0}
+.admin-side{
+  position:fixed;top:0;left:0;bottom:0;width:266px;background:linear-gradient(170deg,#083a28,#0b4a33 60%,#0d5c3f);
+  color:#d8ece2;display:flex;flex-direction:column;z-index:60;overflow-y:auto;
+}
+.admin-brand{display:flex;align-items:center;gap:12px;padding:18px 18px 16px;border-bottom:1px solid rgba(255,255,255,.1)}
+.admin-logo{width:42px;height:42px;object-fit:contain;background:rgba(255,255,255,.08);border-radius:10px;padding:3px}
+.admin-brand .brand-lambang{width:42px;height:42px;background:rgba(255,255,255,.1);color:var(--emas-terang)}
+.admin-brand-teks strong{display:block;color:#fff;font-size:.94rem;line-height:1.25;font-family:var(--serif)}
+.admin-brand-teks small{color:var(--emas-terang);font-size:.75rem;text-transform:uppercase;letter-spacing:.06em}
+.admin-nav{padding:12px 10px 20px;display:flex;flex-direction:column;gap:2px;flex:1}
+.admin-grup{padding:14px 12px 6px;font-size:.7rem;text-transform:uppercase;letter-spacing:.09em;color:#7fa694}
+.admin-nav a{display:flex;align-items:center;gap:11px;padding:10px 12px;border-radius:10px;color:#d8ece2;font-size:.9rem}
+.admin-nav a:hover{background:rgba(255,255,255,.09);color:#fff}
+.admin-nav a.aktif{background:rgba(242,201,76,.16);color:#fff;box-shadow:inset 3px 0 0 var(--emas)}
+.admin-nav a svg{flex:0 0 auto;color:var(--emas-terang)}
+.admin-nav a span{flex:1}
+.lencana{background:var(--merah);color:#fff;border-radius:999px;padding:1px 8px;font-size:.7rem;font-weight:700}
+.admin-nav-kaki{border-top:1px solid rgba(255,255,255,.1);padding:10px}
+.admin-nav-kaki a{display:flex;align-items:center;gap:11px;padding:10px 12px;border-radius:10px;color:#d8ece2;font-size:.88rem}
+.admin-nav-kaki a:hover{background:rgba(255,255,255,.09);color:#fff}
+
+.admin-utama{margin-left:266px;min-height:100vh;display:flex;flex-direction:column}
+.admin-head{background:#fff;border-bottom:1px solid var(--garis);padding:0 24px;min-height:66px;display:flex;align-items:center;gap:16px;position:sticky;top:0;z-index:50}
+.admin-head h1{font-size:1.16rem;margin:0;flex:1;font-family:var(--serif)}
+.admin-user{display:inline-flex;align-items:center;gap:7px;background:var(--hijau-muda);color:var(--hijau-tua);
+  padding:6px 13px;border-radius:999px;font-size:.83rem;font-weight:600}
+.admin-nav-tombol{display:none;background:#fff;border:1.5px solid var(--garis);border-radius:10px;padding:7px;color:var(--hijau-tua)}
+.admin-isi{padding:24px;flex:1}
+.admin-kaki{padding:16px 24px;color:var(--mut);font-size:.8rem;border-top:1px solid var(--garis);background:#fff}
+@media (max-width:980px){
+  .admin-side{transform:translateX(-100%);transition:transform .22s}
+  body.admin.nav-buka .admin-side{transform:none}
+  .admin-utama{margin-left:0}
+  .admin-nav-tombol{display:inline-flex}
+  .admin-isi{padding:16px}
+}
+
+/* kartu statistik */
+.kartu-stat{display:flex;gap:14px;align-items:center;text-decoration:none}
+.kartu-stat:hover{border-color:#d9cfa4;transform:translateY(-2px)}
+.stat-ikon{width:46px;height:46px;border-radius:12px;background:var(--hijau-muda);color:var(--hijau-tua);
+  display:flex;align-items:center;justify-content:center;flex:0 0 auto}
+.stat-angka{font-size:1.5rem;font-weight:800;color:var(--hijau-tua);font-family:var(--serif);line-height:1.1}
+.stat-judul{font-size:.85rem;color:var(--mut)}
+.stat-ket{font-size:.75rem;color:var(--mut)}
+
+/* tombol ikon pada tabel */
+.tombol-ikon{display:inline-flex;align-items:center;justify-content:center;width:32px;height:32px;border-radius:9px;
+  border:1px solid var(--garis);background:#fff;color:var(--hijau-tua);cursor:pointer;padding:0;margin-right:4px}
+.tombol-ikon:hover{border-color:var(--emas);background:var(--emas-muda)}
+.tombol-ikon.bahaya{color:var(--merah)}
+.tombol-ikon.bahaya:hover{background:#fdecea;border-color:#f5c6c2}
+.aksi-sel{white-space:nowrap}
+
+/* tabel admin */
+.kartu .tabel-wrap{border-radius:10px}
+.tabel td.cari-kolom{white-space:nowrap}
+img.thumb-admin,span.thumb-admin{width:86px;height:56px;object-fit:cover;border-radius:8px;background:var(--hijau-muda);
+  display:inline-flex;align-items:center;justify-content:center;font-weight:800;color:var(--hijau-tua);font-size:1rem}
+.kotak-bulat,img.thumb-admin.kotak-bulat{width:56px;height:56px;border-radius:50%}
+span.kotak-kosong.thumb-admin{border-radius:8px;min-height:56px}
+span.kotak-kosong.kotak-bulat{border-radius:50%}
+.saringan{display:flex;gap:12px;flex-wrap:wrap;align-items:flex-end;margin-bottom:18px}
+.saringan .medan{display:flex;flex-direction:column;gap:5px}
+.saringan label{font-size:.78rem;font-weight:600;color:var(--ink)}
+.saringan input,.saringan select{padding:9px 11px;border:1.5px solid var(--garis);border-radius:9px;font:inherit;font-size:.88rem;background:#fff;min-width:150px}
+.baris-jumlah td{font-weight:700;background:var(--emas-muda);color:#6d5510}
+
+/* halaman login admin */
+.login-admin{min-height:100vh;display:flex;align-items:center;justify-content:center;padding:24px;
+  background:linear-gradient(140deg,#083a28,#0b4a33 55%,#0d5c3f);position:relative;overflow:hidden}
+.login-admin::after{content:"";position:absolute;right:-120px;top:-120px;width:420px;height:420px;border-radius:50%;
+  background:radial-gradient(circle,rgba(242,201,76,.2),transparent 70%)}
+.login-kartu{background:#fff;border-radius:18px;padding:34px;width:100%;max-width:420px;box-shadow:0 24px 60px rgba(0,0,0,.3);position:relative;z-index:2}
+.login-kartu .login-brand{display:flex;align-items:center;gap:14px;margin-bottom:22px}
+.login-kartu .login-brand img{width:54px;height:54px;object-fit:contain}
+.login-kartu h1{font-size:1.25rem;margin:0 0 2px;color:var(--hijau-tua)}
+.login-kartu .sub{color:var(--mut);font-size:.85rem}
+.login-kaki{margin-top:18px;font-size:.8rem;color:var(--mut);text-align:center}
+
+/* kartu kecil bantuan pada formulir */
+.kotak-info{background:var(--emas-muda);border:1px solid #efe0b0;border-radius:10px;padding:12px 14px;font-size:.85rem;color:#6d5510}
+.daftar-cek{list-style:none;padding:0;margin:0}
+.daftar-cek li{display:flex;gap:9px;align-items:flex-start;font-size:.88rem;padding:5px 0}
+.daftar-cek li svg{color:var(--hijau);flex:0 0 auto;margin-top:3px}
+
+/* galeri kelola */
+.kelola-foto{display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:14px}.kelola-foto-item{border:1px solid var(--garis);border-radius:12px;overflow:hidden;background:#fff}
+.kelola-foto-item img{width:100%;height:120px;object-fit:cover}
+.kelola-foto-item .isi{padding:10px;font-size:.82rem}
+.kelola-foto-item .aksi{display:flex;gap:6px;margin-top:8px}
+.kotak-kosong{border-radius:0}
+
+/* impor */
+.pratinjau-impor{max-height:340px;overflow:auto;border:1px solid var(--garis);border-radius:10px}
+.pratinjau-impor table{font-size:.82rem}
